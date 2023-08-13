@@ -1,22 +1,31 @@
-
 document.addEventListener("DOMContentLoaded", function() {
-  const imageContainers = document.querySelectorAll(".image-container");
-  const lightbox = document.createElement("div");
-  lightbox.classList.add("lightbox");
-  document.body.appendChild(lightbox);
+    const galleryImages = document.querySelectorAll(".gallery-container img");
+    const lightbox = document.createElement("div");
+    lightbox.classList.add("lightbox");
 
-  imageContainers.forEach((container) => {
-    container.addEventListener("click", function() {
-      const image = this.querySelector("img");
-      const clone = image.cloneNode(true);
-      lightbox.innerHTML = "";
-      lightbox.appendChild(clone);
-      lightbox.style.display = "flex";
+    function showImage(index) {
+        lightbox.innerHTML = `<img src="${galleryImages[index].src}" alt="${galleryImages[index].alt}">`;
+        document.body.appendChild(lightbox);
+        lightbox.style.display = "flex";
+    }
+
+    galleryImages.forEach((image, index) => {
+        image.addEventListener("click", function() {
+            showImage(index);
+        });
     });
-  });
 
-  lightbox.addEventListener("click", function(e) {
-    if (e.target !== e.currentTarget) return;
-    this.style.display = "none";
-  });
+    lightbox.addEventListener("click", function() {
+        lightbox.style.display = "none";
+    });
+
+    function openLightbox() {
+        lightbox.style.display = "flex";
+        for (let i = 0; i < galleryImages.length; i++) {
+            setTimeout(() => showImage(i), i * 1500); // Delay each image display
+        }
+    }
+
+    const exploreButton = document.querySelector(".explore-button");
+    exploreButton.addEventListener("click", openLightbox);
 });

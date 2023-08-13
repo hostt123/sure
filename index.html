@@ -1,155 +1,120 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
+    <title>UniUyo Picture Gallery</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WISDOM MBABA SITE</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <header>
         <div class="logo">
             <img src="picture-gallery/uniuyologo.png" alt="Uniuyo Gallery Logo">
-            <h1>UniUyo Gallery</h1>
+            <h1>UniUyo Picture Gallery</h1>
         </div>
     </header>
-    <P>Mbaba, Wisdom Uduak</P>
-    <p> Department of Computer Science</p>
-    <P>21/SC/CO/1028</P>
-    <hr>
-    <P>This is a Project by Wisdom Uduak Mbaba</P>
-     <P> Which is Submitted to Dr. Ifiok Udoh</P>
-     <hr>
+
     <main>
-        <section class="gallery">
-          <div class="header-image">
-            <div class="image-container">
-                <div class="card">
-                <img src="picture-gallery/600k.jpg" alt="600k">
-                <p> this is ict 2 lecture hall, it has 600 seat capacity </p>
+        <section id="intro">
+            <div class="container">
+                <h2>Welcome to the UniUyo Picture Gallery</h2>
+                
+                <p>
+                    Explore UniUyo's perm site gallery, where stunning architecture meets natural beauty for a unique visual experience. Discover the perfect blend of academic and natural excellence..</p>
+                
+                   <p> By Wisdom Mbaba</p>
+                   <P>21/SC/CO/1028</P>
+                   <P> Submit To Dr. Ifiok Udoh</P>
                 </div>
+                
+                <a href="#" class="explore-button" onclick="openLightbox()">Explore picture</a>
+
+
             </div>
-            </div>
-            <div class="image-container">
+        </section>
+
+        <section id="picture-gallery" class="picture-gallery">
+            <h2>Picture Gallery</h2>
+        
+                
+        </div>
+            <div class="gallery-container">
                 <div class="card">
-                <img src="picture-gallery/admitt.jpg" alt="admittration office">
-                <p>this is the Admintration office </p>
+                    <img src="/picture-gallery/lib.jpg" alt="science">
+                    <P> Main Campus Library </P>
+      </div>
+      <div class="card">
+        <img src="picture-gallery/600k.jpg" alt="Ict2 Lecture Hall">
+        <P> Ict2 Lecture Hall </P>
+        </div>
+        <div class="card">
+                <img src="picture-gallery/uniuyofilling.jpg" alt="UniUyo Filling Station">
+                <p>UniUyo Filling Station</p>
                 </div>
-            </div>
-                <div class="image-container">
+                <div class="card">
+                    <img src="picture-gallery/glfb.jpg" alt="UniUyo Filling Station">
+                    <p>G L F</p>
+                    </div>
                     <div class="card">
-                  <img src="picture-gallery/artgallery.jpg" alt="art gallery">
-                  <p> Art Gallery close to Engineering faculty</p>
+                        <img src="picture-gallery/newb.jpg" alt="UniUyo Filling Station">
+                        <p>New Building</p>
+                        </div>
+                <div class="card">
+                <img src="picture-gallery/admittt.jpg" alt="administration">
+                <p>Administration office</p>
                 </div>
                 </div>
-                <div class="image-container">
+                <div class="gallery-container">
                     <div class="card">
-                  <img src="picture-gallery/engineering.jpg" alt="engineering">
-                  <P> Engineering </P>
+                <img src="picture-gallery/roadview.jpg" alt="UniUyo road view">
+                <p>UniUyo road view</p>
+                </div>
+                <div class="card">
+                <img src="picture-gallery/compu.jpg" alt="computer science">
+                <p>Department of Coputer Science/Mathematics/Satistics</p>
+                </div>
+                <div class="card">
+                <img src="picture-gallery/facultyofag.jpg" alt=" agriculture">
+                <p>Faculty of Agriculture</p>
                 </div>
                 </div>
-                <div class="image-container">
+                <div class="gallery-container">
                     <div class="card">
-                  <img src="picture-gallery/facultyeng.jpg" alt=" faculty of Engineering">
-                  <P>Faculty of Engineering </P>
+                <img src="picture-gallery/eng.jpg" alt="engineering">
+                <P>Faculty of Engineering</P>
+                </div>
+                <div class="card">
+                <img src="picture-gallery/gate.jpg" alt="Uniuyo gate">
+                <p>UniUyo PermSite Gate</p>
+                </div>
+                <div class="card">
+                <img src="picture-gallery/library.jpg" alt="UniUyo library">
+                <p>Uniuyo science market</p>
+                </div>
+                </div>
+                <div class="gallery-container">
+                    <div class="card">
+                <img src="picture-gallery/postg.jpg" alt="UniUyo postgraduate">
+                <p>PostGraduate</p>
+                </div>
+                <div class="card">
+                <img src="picture-gallery/sciencema.jpg" alt="UniUyo science market">
+                <p>UniUyo science market</p>
+                </div>
+                <div class="card">
+                    <img src="picture-gallery/waterfactory.jpg" alt="UniUyo water factory">
+                <p>UniUyo water Factory</p>
+                </div>
+                </div>
+                
             </div>
-            </div>
-            <div class="image-container">
-                <div class="card">
-              <img src="picture-gallery/facultyofag.jpg" alt="Agriculture">
-              <P> Faculty of Agriculture </P>
-              </div>
-              </div>
-              <div class="image-container">
-                <div class="card">
-              <img src="picture-gallery/facultyofsc.jpg" alt="science">
-              <P> Faculty of science</P>
-              </div>
-              </div>
-              <div class="image-container">
-                <div class="card">
-              <img src="picture-gallery/bgs.jpg" alt="science">
-              <P> Faculty of science side view </P>
-              </div>
-              </div>
-              <div class="image-container">
-                <div class="card">
-              <img src="picture-gallery/glfb.jpg" alt="hall">
-              <P> GLF lecture hall </P>
-              </div>
-              </div>
-              <div class="image-container">
-                <div class="card">
-              <img src="picture-gallery/hostel.jpg" alt="engineering">
-              <P> Engineering hostel </P>
-              </div>
-              </div>
-              <div class="image-container">
-                <div class="card">
-              <img src="picture-gallery/allumi.jpg" alt="Science">
-              <P> Alumni Relations Office </P>
-              </div>
-              </div>
-              <div class="image-container">
-                <div class="card">
-              <img src="picture-gallery/lib.jpg" alt="science">
-              <P> Main Campus Library </P>
-              </div>
-              </div>
-              <div class="image-container">
-                <div class="card">
-              <img src="picture-gallery/library.jpg" alt="science">
-              <P> Main Campus Library</P>
-              </div>
-              </div>
-              <div class="image-container">
-                <div class="card">
-              <img src="picture-gallery/newb.jpg" alt="science">
-              <P> new building under construction beside ict 2 </P>
-              </div>
-              </div>
-              <div class="image-container">
-                <div class="card">
-              <img src="picture-gallery/postg.jpg" alt="engineering">
-              <P> Post Graduate Building </P>
-              </div>
-              </div>
-              <div class="image-container">
-                <div class="card">
-              <img src="picture-gallery/ptdf.jpg" alt="building">
-              <P> PTDF buiding also know as Y Building </P>
-              </div>
-              </div>
-              <div class="image-container">
-                <div class="card">
-              <img src="picture-gallery/sciencema.jpg" alt="science">
-              <P> Science Market  </P>
-              </div>
-              </div>
-              <div class="image-container">
-                <div class="card">
-              <img src="picture-gallery/waterfactory.jpg" alt="factory">
-              <P> UniUyo Water Factory </P>
-              </div>
-              </div>
-              <div class="image-container">
-                <div class="card">
-              <img src="picture-gallery/uniuyofilling.jpg" alt="outside">
-              <P> UniUyo Filling Station</P>
-              </div>
-              </div>
-              <div class="image-container">
-                <div class="card">
-              <img src="picture-gallery/compu.jpg" alt="inside">
-              <P> Computer Science / Satistic / Mathematics Department</P>
-              </div>
-              </div>
+            </section>
         </section>
     </main>
     <footer>
-        <p>&copy; 2023 Uniuyo Gallery</p>
+      <p>&copy;2023 picture gallery by wisdom mbaba</p>
     </footer>
+
     <script src="index.js"></script>
 </body>
 </html>
