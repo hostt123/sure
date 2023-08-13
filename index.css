@@ -42,7 +42,7 @@ header {
   padding: 5px;
   background-image: url(picture-gallery/compu.jpg);
   background-size: 10%;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family:cursive;
 }
 
 h1 {
@@ -78,7 +78,7 @@ p {
   transition: background-color 0.3s ease;
   background-image: url(picture-gallery/eng.jpg);
   background-size: 50%;
-  font-family:fantasy;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .explore-button:hover {
@@ -145,7 +145,7 @@ p {
   margin: 0px;
 }
 .card > p{
-  font-family:fantasy;
+  font-family:cursive;
   padding:0px 10px 10px 10px ;
   text-align: center;
   color:black;
